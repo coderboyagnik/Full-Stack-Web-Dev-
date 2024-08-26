@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        /* Universal reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(236, 239, 246, 255);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar and logo */
+        .nav-logo {
+            background-color: rgba(59, 89, 153, 255);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .logo {
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+            color: white;
+            font-size: 2em;
+        }
+
+        /* Login form */
+        .login-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-size: 0.9em;
+        }
+
+        .login-form label {
+            margin-right: 5px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: rgba(59, 89, 153, 255);
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            color: white;
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+
+        /* Main content layout */
+        .main-content {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .facebook-image {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .signup-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .signup-section h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .signup-section p {
+            margin: 10px 0;
+        }
+
+        .signup-section input[type="text"],
+        .signup-section input[type="password"],
+        .signup-section input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .birthday-info {
+            display: block;
+            color: #6c757d;
+            font-size: 0.8em;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .gender-selection {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .gender-selection label {
+            margin-left: 5px;
+            margin-right: 15px;
+        }
+
+        .signup-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6ba551;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="nav-logo">
+    <div class="logo">
+        <span>facebook</span>
+    </div>
+    <div class="login-form">
+        <form>
+            <label for="email">Email or Phone</label>
+            <input type="text" id="email">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <a href="#" class="forgot-password">Forgotten password?</a>
+            <input type="submit" value="Log In" class="login-button">
+        </form>
+    </div>
+</div>
+<div class="main-content">
+    <div class="left-column">
+        <img src="Facebook-world.jpg" alt="Facebook World" class="facebook-image">
+    </div>
+    <div class="right-column">
+        <div class="signup-section">
+            <h1>Create an account</h1>
+            <p>It's free and always will be.</p>
+            <form>
+                <input type="text" id="fname" placeholder="First name">
+                <input type="text" id="lname" placeholder="Last name">
+                <input type="text" id="signup-email" placeholder="Mobile number or email">
+                <input type="password" id="signup-password" placeholder="New password">
+                <label for="birthdate">Birthday</label>
+                <input type="date" id="birthdate">
+                <a href="#" class="birthday-info">Why do I need to provide my birthday?</a>
+                <div class="gender-selection">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+                <p>By clicking "Create an account", you agree to our terms and confirm that you have read our data policy, including our cookie policy. You may receive SMS notifications from us and can opt out at any time.</p>
+                <input type="submit" value="Create an account" class="signup-button">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
