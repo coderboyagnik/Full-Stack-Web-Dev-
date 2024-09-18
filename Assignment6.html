@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Messi's Legacy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .carousel-inner {
+            height: 400px;
+        }
+        .carousel-item img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+        }
+        #card {
+            display: flex;
+            justify-content: center;
+            column-gap: 50px;
+        }
+        p {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: larger;
+        }
+        #revbox {
+            position: absolute;
+            height: 20%;
+            width: 64%;
+            top: 105%;
+            right: 18%;
+            background-color: #FAF9F6;
+        }
+        #logo {
+            position: absolute;
+            left: 10%;
+            height: 20vh;
+            width: 10vw;
+        }
+        #rev {
+            position: absolute;
+            height: 50px;
+            width: 70%;
+            right: 5%;
+            top: 30%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: small;
+        }
+        #revtop {
+            position: absolute;
+            font-size: x-large;
+            left: 2%;
+        }
+        #embdmap {
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            top: 130%;
+            padding-bottom: 0;
+        }
+        #direction {
+            position: absolute;
+            top: 125%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- carousel -->
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i.pinimg.com/236x/06/14/f2/0614f2c006d94881f4804218c888a3c2.jpg" class="d-block w-100" alt="Barcelona Messi">
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/236x/25/ba/ee/25baeee93798fef150ed2a52a28880f9.jpg" class="d-block w-100" alt="PSG Messi">
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/474x/d2/ea/1d/d2ea1dcc63cf84d452089aac7567066c.jpg" class="d-block w-100" alt="Argentina Messi">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- cards -->
+<div id="card">
+    <div class="card" id="card-1" style="width: 18rem;">
+        <img src="https://i.pinimg.com/236x/06/14/f2/0614f2c006d94881f4804218c888a3c2.jpg" class="card-img-top" alt="Barcelona Messi" style="height: 60%;">
+        <div class="card-body">
+            <p class="card-text">BARCELONA MESSI.</p>
+            <h6>Lionel Messi's legacy at Barcelona is unparalleled, leading the club to multiple La Liga and Champions League titles.</h6>
+        </div>
+    </div>
+    <div class="card" id="card-2" style="width: 18rem;">
+        <img src="https://i.pinimg.com/236x/25/ba/ee/25baeee93798fef150ed2a52a28880f9.jpg" class="card-img-top" alt="PSG Messi" style="height: 60%;">
+        <div class="card-body">
+            <p class="card-text">PSG MESSI.</p>
+            <h6>Messi's move to Paris Saint-Germain marked a new chapter in his career, continuing his brilliance in Ligue 1.</h6>
+        </div>
+    </div>
+    <div class="card" id="card-3" style="width: 18rem;">
+        <img src="https://i.pinimg.com/474x/d2/ea/1d/d2ea1dcc63cf84d452089aac7567066c.jpg" class="card-img-top" alt="Argentina Messi" style="height: 60%;">
+        <div class="card-body">
+            <p class="card-text">ARGENTINA MESSI.</p>
+            <h6>Messi finally lifted the World Cup in 2022, bringing glory to Argentina and cementing his status as a footballing legend.</h6>
+        </div>
+    </div>
+</div>
+
+<!-- review -->
+<div id="revbox">
+    <div id="revtop">Review:-</div>
+    <img src="https://i.pinimg.com/236x/4c/d3/37/4cd337629e23ba2a3a7f8ff2b627c213.jpg" alt="logo" id="logo">
+    <div id="rev">Lionel Messi's career has been nothing short of extraordinary. From dominating La Liga with Barcelona to conquering the world with Argentina in 2022, Messi has redefined football greatness. His vision, technique, and consistency have earned him numerous Ballon d'Or awards and made him a global icon.</div>
+</div>
+
+<!-- map -->
+<footer>
+    <p id="direction">DIRECTION:-</p>
+    <div class="ratio ratio-16x5" id="embdmap">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d919.9300942755889!2d88.45658639585054!3d22.73863232915178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f898ec702e5daf%3A0xfa41b06da8478350!2sAdamas%20University!5e0!3m2!1sen!2sin!4v1724881815074!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
